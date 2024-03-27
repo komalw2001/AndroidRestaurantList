@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/list_item_height"
-    android:layout_margin="@dimen/tiny_margin">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/tiny_margin"
+    app:cardCornerRadius="@dimen/rest_radius"
+    app:cardElevation="@dimen/restShadow"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
 
     <LinearLayout
         android:layout_width="@dimen/zero_dim"
@@ -19,6 +28,7 @@
             android:text="@string/rating_def"
             android:gravity="center"
             android:id="@+id/tvRestRating"
+            android:textStyle="italic"
             ></TextView>
 
     </LinearLayout>
@@ -44,12 +54,13 @@
             <TextView
                 android:layout_width="@dimen/zero_dim"
                 android:layout_height="wrap_content"
-                android:layout_weight="4"
+                android:layout_weight="5"
                 android:text="@string/restaurant_name"
                 android:id="@+id/tvRestName"
                 android:textSize="@dimen/list_item_text_size"
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:textStyle="bold"
                 ></TextView>
 
         </LinearLayout>
@@ -67,7 +78,7 @@
             <TextView
                 android:layout_width="@dimen/zero_dim"
                 android:layout_height="wrap_content"
-                android:layout_weight="4"
+                android:layout_weight="5"
                 android:text="@string/restaurant_location"
                 android:id="@+id/tvRestLocation"
                 android:textSize="@dimen/list_item_text_size"
@@ -90,7 +101,7 @@
             <TextView
                 android:layout_width="@dimen/zero_dim"
                 android:layout_height="wrap_content"
-                android:layout_weight="4"
+                android:layout_weight="5"
                 android:text="@string/restaurant_phone"
                 android:id="@+id/tvRestPhone"
                 android:textSize="@dimen/list_item_text_size"
@@ -113,7 +124,7 @@
             <TextView
                 android:layout_width="@dimen/zero_dim"
                 android:layout_height="wrap_content"
-                android:layout_weight="4"
+                android:layout_weight="5"
                 android:text="@string/restaurant_desc"
                 android:id="@+id/tvRestDesc"
                 android:textSize="@dimen/list_item_text_size"
@@ -146,3 +157,5 @@
     </LinearLayout>
 
 </LinearLayout>
+
+</androidx.cardview.widget.CardView>
