@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SMD_20L-1114_A2</string>
+    <string name="rating_def">0.0</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="restaurant_location">Location</string>
+    <string name="restaurant_phone">Phone</string>
+    <string name="restaurant_desc">Description</string>
 </resources>

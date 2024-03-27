@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:layout_margin="@dimen/tiny_margin">
+
+    <LinearLayout
+        android:layout_width="@dimen/zero_dim"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:background="@color/rating_bg"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/rating_fontsize"
+            android:text="@string/rating_def"
+            android:gravity="center"
+            android:id="@+id/tvRestRating"
+            ></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/zero_dim"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="@dimen/zero_dim"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/restaurant_icon"></ImageView>
+
+            <TextView
+                android:layout_width="@dimen/zero_dim"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/restaurant_name"
+                android:id="@+id/tvRestName"
+                android:textSize="@dimen/list_item_text_size"
+                android:layout_gravity="center"
+                android:gravity="center"
+                ></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="@dimen/zero_dim"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/location_icon"></ImageView>
+
+            <TextView
+                android:layout_width="@dimen/zero_dim"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/restaurant_location"
+                android:id="@+id/tvRestLocation"
+                android:textSize="@dimen/list_item_text_size"
+                android:layout_gravity="center"
+                android:gravity="center"
+                ></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="@dimen/zero_dim"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/phone_icon"></ImageView>
+
+            <TextView
+                android:layout_width="@dimen/zero_dim"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/restaurant_phone"
+                android:id="@+id/tvRestPhone"
+                android:textSize="@dimen/list_item_text_size"
+                android:layout_gravity="center"
+                android:gravity="center"
+                ></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="@dimen/zero_dim"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/desc_icon"></ImageView>
+
+            <TextView
+                android:layout_width="@dimen/zero_dim"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/restaurant_desc"
+                android:id="@+id/tvRestDesc"
+                android:textSize="@dimen/list_item_text_size"
+                android:layout_gravity="center"
+                android:gravity="center"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/zero_dim"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/zero_dim"
+            android:layout_weight="1"
+            android:src="@drawable/call_icon"></ImageView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/zero_dim"
+            android:layout_weight="1"
+            android:src="@drawable/message_icon"></ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>
