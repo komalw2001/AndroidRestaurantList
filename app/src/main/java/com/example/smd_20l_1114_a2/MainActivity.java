@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new Restaurant("Subway","Lahore","04212345678","Delicious subs available!",3.9));
         list.add(new Restaurant("Dominos","Lahore","04212345678","Best pizza place!",4.3));
         list.add(new Restaurant("KFC","Lahore","04212345678","Fried chicken and burgers!",4.6));
-        list.add(new Restaurant("Bad Restaurant","Lahore","04212345678","Burgers at low prices!",1.7));
+        list.add(new Restaurant("Bad Restaurant","Lahore","04212345678","Burgers at low prices!",1.2));
 
         adapter = new RestaurantAdapter(list);
 
