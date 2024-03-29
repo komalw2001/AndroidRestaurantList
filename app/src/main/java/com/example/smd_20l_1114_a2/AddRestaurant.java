@@ -9,6 +9,7 @@ import android.content.Intent;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.text.DecimalFormat;
+import java.util.Objects;
 
 public class AddRestaurant extends AppCompatActivity {
 
@@ -37,11 +38,11 @@ public class AddRestaurant extends AppCompatActivity {
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name = etARName.getText().toString().trim();
-                String location = etARLocation.getText().toString().trim();
-                String description = etARDesc.getText().toString().trim();
-                String phone = etARPhone.getText().toString().trim();
-                String rating = etARRating.getText().toString().trim();
+                String name = Objects.requireNonNull(etARName.getText()).toString().trim();
+                String location = Objects.requireNonNull(etARLocation.getText()).toString().trim();
+                String description = Objects.requireNonNull(etARDesc.getText()).toString().trim();
+                String phone = Objects.requireNonNull(etARPhone.getText()).toString().trim();
+                String rating = Objects.requireNonNull(etARRating.getText()).toString().trim();
 
                 if (name.isEmpty() || location.isEmpty() || description.isEmpty() || phone.isEmpty() || rating.isEmpty()) {
                     Toast.makeText(AddRestaurant.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
