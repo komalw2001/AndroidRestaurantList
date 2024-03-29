@@ -18,6 +18,10 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.RV
         this.restaurants = rest;
     }
 
+    public void setRestaurants(ArrayList<Restaurant> restaurants) {
+        this.restaurants = restaurants;
+    }
+
     @NonNull
     @Override
     public RViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
