@@ -1,18 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/filter_height"
+        android:background="@color/filter_menu"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/filter"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/list_item_text_size"
+            android:layout_margin="@dimen/tiny_margin"
+            android:gravity="center"
+            ></TextView>
+        <Button
+            android:layout_width="@dimen/rating_btn"
+            android:layout_height="@dimen/rating_btn"
+            android:text="5"
+            android:padding="@dimen/zero_dim"
+            android:textSize="@dimen/list_item_text_size"
+            android:layout_margin="@dimen/tiny_margin"
+            android:backgroundTint="@color/rating_btn"
+            android:id="@+id/btnFilter5"
+            android:drawableEnd="@drawable/star_icon"
+            android:drawablePadding="@dimen/zero_dim"
+            ></Button>
+        <Button
+            android:layout_width="@dimen/rating_btn"
+            android:layout_height="@dimen/rating_btn"
+            android:text="4"
+            android:padding="@dimen/zero_dim"
+            android:textSize="@dimen/list_item_text_size"
+            android:layout_margin="@dimen/tiny_margin"
+            android:backgroundTint="@color/rating_btn"
+            android:id="@+id/btnFilter4"
+            android:drawableEnd="@drawable/star_icon"
+            android:drawablePadding="@dimen/zero_dim"
+            ></Button>
+        <Button
+            android:layout_width="@dimen/rating_btn"
+            android:layout_height="@dimen/rating_btn"
+            android:text="3"
+            android:padding="@dimen/zero_dim"
+            android:textSize="@dimen/list_item_text_size"
+            android:layout_margin="@dimen/tiny_margin"
+            android:backgroundTint="@color/rating_btn"
+            android:id="@+id/btnFilter3"
+            android:drawableEnd="@drawable/star_icon"
+            android:drawablePadding="@dimen/zero_dim"
+            ></Button>
+        <Button
+            android:layout_width="@dimen/rating_btn"
+            android:layout_height="@dimen/rating_btn"
+            android:text="2"
+            android:padding="@dimen/zero_dim"
+            android:textSize="@dimen/list_item_text_size"
+            android:layout_margin="@dimen/tiny_margin"
+            android:backgroundTint="@color/rating_btn"
+            android:id="@+id/btnFilter2"
+            android:drawableEnd="@drawable/star_icon"
+            android:drawablePadding="@dimen/zero_dim"
+            ></Button>
+        <Button
+            android:layout_width="@dimen/rating_btn"
+            android:layout_height="@dimen/rating_btn"
+            android:text="1"
+            android:padding="@dimen/zero_dim"
+            android:textSize="@dimen/list_item_text_size"
+            android:layout_margin="@dimen/tiny_margin"
+            android:backgroundTint="@color/rating_btn"
+            android:id="@+id/btnFilter1"
+            android:drawableEnd="@drawable/star_icon"
+            android:drawablePadding="@dimen/zero_dim"
+            ></Button>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7802FF"
+        android:layout_marginTop="@dimen/tiny_margin"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#00FFFFFF"
+            android:text="ADD"
+            android:textSize="@dimen/list_item_text_size"
+            android:textStyle="bold"
+            android:id="@+id/btnAddRest"
+            ></Button>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvRest"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

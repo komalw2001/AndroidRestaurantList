@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="rating_bg">#FFC107</color>
+    <color name="filter_menu">#F44336</color>
+    <color name="rating_btn">#1BFFFFFF</color>
+    <color name="rating_btn_selected">#65FFFFFF</color>
+    <color name="main_bg">#EEF3F3</color>
+    <color name="call_icon">#4CAF50</color>
+    <color name="message_icon">#078CDC</color>
+    <color name="rest_color">#D12F24</color>
+    <color name="addRestColor">#FF8400</color>
 </resources>
